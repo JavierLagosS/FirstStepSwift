@@ -1,0 +1,41 @@
+import Foundation
+var  namePersonas = ["Ariel","Juan","Javier","Jaime"]
+var  apellidoPersonas = ["Curinao","Morales", "lagos","Galaz"]
+
+// Para Recorrer un array 
+namePersonas.forEach { name in
+  print(name)        
+}
+
+// Mostrar en consola nombre y apellido Personas
+for i in 0 ..< namePersonas.count {
+    print("\(namePersonas[i])  \(apellidoPersonas[i])")
+}
+
+// Crear un tercer Array y concatenar los anteriores 
+
+import Foundation
+var  namePersonas = ["Ariel","Juan","Javier","Jaime"]
+var  apellidoPersonas = ["Curinao","Morales", "lagos","Galaz"]
+var nombreCompleto: [String] = []
+
+for i in 0 ..< namePersonas.count{
+nombreCompleto += ["\(namePersonas[i])  \(apellidoPersonas[i])"]
+}
+
+print(nombreCompleto)
+
+// Con entrada de datos de teclado 
+
+var  namePersonas = ["Ariel","Juan","Javier","Jaime"]
+var nombreCompleto: [String] = []
+var apellido = "null"
+
+for i in 0 ..< namePersonas.count{
+print ("Favor Ingresar apellido de  \( namePersonas[i])")
+
+
+apellido = readLine()!
+nombreCompleto += ["\(namePersonas[i])  \(apellido)"]
+ 
+}
